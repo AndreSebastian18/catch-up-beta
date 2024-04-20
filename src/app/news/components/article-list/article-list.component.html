@@ -1,0 +1,15 @@
+<mat-card *ngFor="let article of articles" class="article-card">
+  <mat-card-header>
+    <mat-card-title-group>
+      <mat-card-title>{{ article.title }}</mat-card-title>
+    </mat-card-title-group>
+  </mat-card-header>
+  <img mat-card-image [src]="article.urlToImage" [alt]="article.title"/>
+  <mat-card-content>
+    <p>{{ article.description }}</p>
+    <p>{{article.source.id}}</p>
+    <p></p>
+    <p></p>
+    <p></p>
+  </mat-card-content>
+</mat-card>
